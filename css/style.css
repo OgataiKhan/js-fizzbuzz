@@ -9,3 +9,28 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+
+/* 
+********
+COMMON
+********
+*/
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+/* 
+********
+TYPOGRAPHY
+********
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
