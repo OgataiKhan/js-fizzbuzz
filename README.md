@@ -1,3 +1,5 @@
+# FizzBuzz
+
 This is a simple script that prints the numbers from 1 to 100, but for multiples of 3 it prints the word "Fizz" instead and for multiples of 5 it prints the word "Buzz" instead. For numbers that are multiples of both 3 and 5 it prints the word "FizzBuzz".
 
 1. Create a loop that counts from 1 to 100  
