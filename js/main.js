@@ -46,6 +46,6 @@ for (let i = 1; i <= 100; i++) {
 
     // 8. Use append() to print our output into an html element
     numberBox.append(output);
-    numbers.append (numberBox);
-  }
+    numbers.append(numberBox);
+}
   
