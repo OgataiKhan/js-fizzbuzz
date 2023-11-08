@@ -12,17 +12,13 @@ RESET
 
 /* 
 ********
-COMMON
+VARIABLES
 ********
 */
 
-.container {
-    width: 1000px;
-    margin: 0 auto;
-}
-
-.container h1 {
-    text-align: center;
+:root {
+    --numbers-width: 1000px;
+    --gap: 20px;
 }
 
 /* 
@@ -33,4 +29,61 @@ TYPOGRAPHY
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+.container #numbers .number-box {
+    font-size: 1.4rem;
+}
+
+/* 
+********
+MAIN
+********
+*/
+
+body {
+    background-color: #083B4C;
+    padding: 30px;
+}
+
+.container {
+    width: var(--numbers-width);
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.container #numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.container #numbers .number-box {
+    width: calc((100% - (6 * var(--gap))) / 7);
+    aspect-ratio: 1 / 1;
+    background-color: #1389B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #numbers .number-box.fizz {
+    background-color: #0CD6A1;
+}
+
+.container #numbers .number-box.buzz {
+    background-color: #FFD166;
+}
+
+.container #numbers .number-box.fizzbuzz {
+    background-color: #F0466F;
 }
